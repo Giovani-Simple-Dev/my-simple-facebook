@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Conta</title>
+    <link rel="stylesheet" href="css/5.css">
+</head>
+<body>
+    <div class="container">
+        <form id="recoverForm">
+            <input type="text" name="newemail" id="recoverEmail" placeholder="Insira seu email" required>
+            <button type="submit" id="recoverButton" class="recover">Recuperar</button>
+            <script>
+                document.getElementById('recoverForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+                window.location.href = 'recuperado.html';
+                });
+            </script>
+        </form>
+    </div>
+</body>
+</html>

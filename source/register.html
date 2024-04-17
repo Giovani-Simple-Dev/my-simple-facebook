@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registre-se</title>
+    <link rel="shortcut icon" href="facebook.ico" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/y1/l/0,cross/-f3fQ18eYFj.css?_nc_x=Ij3Wp8lg5Kz" data-bootloader-hash="4PPkynA" crossorigin="anonymous" />
+    <link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/yW/l/0,cross/bhHErlshOuZ.css?_nc_x=Ij3Wp8lg5Kz" data-bootloader-hash="GLWoijf" crossorigin="anonymous" />
+    <link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/yo/l/0,cross/oI7bhS_irZs.css?_nc_x=Ij3Wp8lg5Kz" data-bootloader-hash="UmHNvtz" crossorigin="anonymous" />
+    <link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/yr/l/0,cross/nuNKxsHxWy3.css?_nc_x=Ij3Wp8lg5Kz" data-bootloader-hash="bB8N6Cz" crossorigin="anonymous" />
+    <link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/yQ/l/0,cross/OZRnJgs6Suh.css?_nc_x=Ij3Wp8lg5Kz" data-bootloader-hash="rk/b7Sj" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style4.css">
+</head>
+<body>
+    <h1>Registre-se</h1>
+    <form id="registerForm">
+        <input type="email" class="registermail" id="registeremail" placeholder="Email" required><br>
+        <input type="password" class="registerpass" id="registerpassword" placeholder="Password" required><br>
+        <button class="registerForm" id="registerForm">Cadastre-se</button>
+    </form>
+    <script>
+    document.getElementById('registerForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const email = document.getElementById('registeremail').value;
+    const password = document.getElementById('registerpassword').value;
+
+    // Aqui você pode adicionar lógica para enviar os dados de login para o servidor PHP
+    // e processar a resposta, por exemplo, redirecionando o usuário para a página inicial se o login for bem-sucedido.
+    // Aqui, vamos apenas exibir uma mensagem de sucesso fictícia.
+    showMessage('registro realizado com sucesso!');
+    setTimeout(() => {
+        window.location.href = 'feed.html'; // Redirecionando para a página de feed de notícias
+    }, 1000); // Simulando um atraso de 1 segundo para o redirecionamento
+});
+
+function showMessage(message) {
+    // Aqui você pode exibir a mensagem em algum lugar na página, como abaixo do botão de login.
+    alert(message);
+}
+    </script>
+</body>
+</html>
