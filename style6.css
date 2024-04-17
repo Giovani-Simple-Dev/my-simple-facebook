@@ -1,0 +1,7 @@
+body{
+    background-color: #08b7a2;
+    position: absolute; /* Adicionando position absolute */
+    margin: 100px 330px;
+    text-align: center;
+    width: 600px;
+}

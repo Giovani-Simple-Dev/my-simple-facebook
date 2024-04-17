@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar Perfil</title>
+    <link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/y1/l/0,cross/-f3fQ18eYFj.css?_nc_x=Ij3Wp8lg5Kz" data-bootloader-hash="4PPkynA" crossorigin="anonymous" />
+<link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/yW/l/0,cross/bhHErlshOuZ.css?_nc_x=Ij3Wp8lg5Kz" data-bootloader-hash="GLWoijf" crossorigin="anonymous" />
+<link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/yo/l/0,cross/oI7bhS_irZs.css?_nc_x=Ij3Wp8lg5Kz" data-bootloader-hash="UmHNvtz" crossorigin="anonymous" />
+<link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/yr/l/0,cross/nuNKxsHxWy3.css?_nc_x=Ij3Wp8lg5Kz" data-bootloader-hash="bB8N6Cz" crossorigin="anonymous" />
+<link type="text/css" rel="stylesheet" href="https://static.xx.fbcdn.net/rsrc.php/v3/yQ/l/0,cross/OZRnJgs6Suh.css?_nc_x=Ij3Wp8lg5Kz" data-bootloader-hash="rk/b7Sj" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Modificar Perfil</h1>
+        <form id="profileForm">
+            <input type="text" id="profileName" placeholder="Nome Completo" required>
+            <input type="email" placeholder="Email" id="profileEmail" required>
+            <input type="password" placeholder="Senha" id="profilePassword" required>
+            <label for="profile-picture">Foto de Perfil:</label>
+        <input id="profile-picture" type="file" name="profile-picture" onchange="previewImage(event)" accept="image/*"><br><br>
+            <button id="profileForm" type="submit">Salvar Alterações</button>
+        </form>
+        <div id="message"></div>
+    </div>
+        <input id="file-upload" type="file" name="files[]" multiple onchange="previewImage(event)" />
+    </form>
+    
+    <div class="file-preview" id="file-preview">
+        <img src="#" alt="Preview" id="preview-image">
+    </div>
+    
+    
+ 
+    <script src="js/profile.js"></script>
+</body>
+</html>

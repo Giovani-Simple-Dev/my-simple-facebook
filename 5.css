@@ -1,0 +1,8 @@
+body{
+    background-color: #08b7a2;
+    position: absolute; /* Adicionando position absolute */
+    margin: 100px 330px;
+    font: 18px Helvetica, Arial, sans-serif;
+    text-align: center;
+    width: 600px;
+}

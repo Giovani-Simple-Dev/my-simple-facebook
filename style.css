@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+#postForm {
+    margin-bottom: 20px;
+}
+
+#postList {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.post {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+}
+#file-upload {
+    display: none;
+}
+.file-preview {
+    display: none;
+}
+.circle-preview {
+    width: 50px; /* Defina o tamanho do círculo */
+    height: 50px; /* Defina o tamanho do círculo */
+    border-radius: 50%; /* Garante que seja um círculo */
+    background-color: #f0f0f0; /* Cor de fundo */
+    overflow: hidden;
+    position: fixed; /* Posicionamento fixo */
+    top: 20px; /* Ajuste a posição vertical conforme necessário */
+    right: 20px; /* Ajuste a posição horizontal conforme necessário */
+    z-index: 9999; /* Garante que o círculo esteja na parte superior da pilha de elementos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; /* Remove sublinhado padrão da âncora */
+}
+
+.circle-preview:before {
+    content: '\f007'; /* Código do ícone (pode ser alterado para outro) */
+    font-family: "Font Awesome 5 Free"; /* Fonte do ícone */
+    font-size: 24px; /* Tamanho do ícone */
+    color: #333; /* Cor do ícone */
+}
+
+.circle-preview:hover {
+    background-color: #ccc; /* Cor de fundo ao passar o mouse */
+    cursor: pointer; /* Altera o cursor para indicar que é clicável */
+}
