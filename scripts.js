@@ -1,8 +1,6 @@
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault();
-    
-    const email = document.getElementById('loginEmail').value;
-    const password = document.getElementById('loginPassword').value;
+
             window.location.href = 'feed.html'; // Redirecionando para a página de feed de notícia
     }
 });
